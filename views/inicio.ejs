@@ -1,0 +1,334 @@
+<%- include('partials/header', { title: 'Inicio' }) %>
+
+<section class="content container mt-5">
+
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <title>Carousel/Slideshow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+        width: 100%; /* Cambiado a 100% para que ocupe todo el ancho del contenedor */
+        height: auto; /* Para mantener la proporción de la imagen */
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div class="container">
+      <br>
+      <div id="theCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ol class="carousel-indicators">
+          <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#theCarousel" data-slide-to="1"></li>
+          <li data-target="#theCarousel" data-slide-to="2"></li>
+          <li data-target="#theCarousel" data-slide-to="3"></li>
+          <li data-target="#theCarousel" data-slide-to="4"></li> <!-- Añadido indicador para la quinta imagen -->
+        </ol>
+  
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="http://hospitalveterinarioteran.com/wp-content/uploads/2017/11/slider6.jpg" alt="Imagen 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+  
+          <div class="item">
+            <img src="http://hospitalveterinarioteran.com/wp-content/uploads/2017/11/slider4.jpg" alt="Imagen 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+  
+          <div class="item">
+            <img src="http://hospitalveterinarioteran.com/wp-content/uploads/2017/11/slider3.jpg" alt="Imagen 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+  
+          <div class="item">
+            <img src="http://hospitalveterinarioteran.com/wp-content/uploads/2017/11/slider2.jpg" alt="Imagen 4">
+            <div class="carousel-caption d-none d-md-block">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+  
+          <div class="item">
+            <img src="http://hospitalveterinarioteran.com/wp-content/uploads/2017/11/slider1.jpg" alt="Imagen 5">
+            <div class="carousel-caption d-none d-md-block">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+  
+        <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+  
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  </body>
+  </html>
+   
+
+  <!-- Sección de por qué elegirnos -->
+  <div class="why-choose-us-section mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Imagen -->
+        <div class="col-md-4">
+          <img src="https://i.pinimg.com/564x/27/dd/df/27dddf450ba3e7f22494859356b925f1.jpg" class="img-fluid rounded" alt="Por qué elegirnos">
+        </div>
+        <!-- Texto -->
+        <div class="col-md-8">
+          <div class="why-choose-us-text">
+            <h2>¿Por qué elegirnos?</h2>
+            <p>
+              Veterinarias Terán es sinónimo de profesionalismo y pasión por la medicina veterinaria, son 24 años de salvaguardar el bienestar de las mascotas del Perú, 24 años en los cuales hemos sido precursores en incluir tecnología médica de punta haciendo hincapié en la capacitación constante de nuestro staff, tanto nacional como internacionalmente, cada día es un reto para mejorar la sociedad, para salvar una vida pero sobre todo cambiar nuestro país.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<br/>
+
+<div class="container">
+  <!-- Primer bloque: Momentos Terán -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card feature-card text-center">
+        <div class="card-body">
+          <h3 class="card-title">Momentos Terán</h3>
+          <p class="card-text">Historias de nuestros clientes, eventos y mucho más.</p>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="http://hospitalveterinarioteran.com/wp-content/uploads/2017/11/10-384x300.jpg" class="img-fluid mb-3" alt="Momentos Terán 1">
+            </div>
+            <div class="col-md-4">
+              <img src="http://hospitalveterinarioteran.com/wp-content/uploads/2017/11/13-384x300.jpg" class="img-fluid mb-3" alt="Momentos Terán 2">
+            </div>
+            <div class="col-md-4">
+              <img src="http://hospitalveterinarioteran.com/wp-content/uploads/2017/11/11-384x300.jpg" class="img-fluid mb-3" alt="Momentos Terán 3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Sección de Contacto -->
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <div class="card contact-card text-center">
+          <div class="card-body">
+            <h3 class="card-title">Contacto</h3>
+            <p class="card-text">Email: <a href="mailto:veterinariasteran@hospitalveterinarioteran.com">veterinariasteran@hospitalveterinarioteran.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Sección de Datos de cada sede con mapas -->
+    <div class="row mb-4">
+      <!-- Sede Yanahuara -->
+      <div class="col-md-4">
+        <div class="card contact-card text-center">
+          <div class="card-body">
+            <h3 class="card-title">Sede Yanahuara</h3>
+            <p class="card-text">
+              Los Cedros F-2<br>
+              Teléfonos: (054) 274343 – (054) 255587<br>
+              Celular: 959390711
+            </p>
+            <div class="map mb-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7655.183113447333!2d-71.548404!3d-16.394756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5d5765b32d%3A0x96777b991a18374e!2sVeterinarias%20Teran!5e0!3m2!1ses!2sus!4v1718631172823!5m2!1ses!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Sede Paucarpata -->
+      <div class="col-md-4">
+        <div class="card contact-card text-center">
+          <div class="card-body">
+            <h3 class="card-title">Sede Paucarpata</h3>
+            <p class="card-text">
+              Av. Pizarro C8<br>
+              Teléfono: (054) 332600
+            </p>
+            <div class="map mb-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7654.161099105657!2d-71.516724!3d-16.420735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b1908dcb77b%3A0x660e161b71070f28!2sHOSPITAL%20DE%20MASCOTAS%20TERAN%20-%20SEDE%20PAUCARPATA!5e0!3m2!1ses!2sus!4v1718631092233!5m2!1ses!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Terán Express - José Luis Bustamante y Rivero -->
+      <div class="col-md-4">
+        <div class="card contact-card text-center">
+          <div class="card-body">
+            <h3 class="card-title">Terán Express - José Luis Bustamante y Rivero</h3>
+            <p class="card-text">
+              Perú 304<br>
+              Teléfono: (054) 429893
+            </p>
+            <div class="map mb-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7653.790166767757!2d-71.533118!3d-16.430154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424adc500ed8ad%3A0x49b1fdd2217356e8!2sCl%C3%ADnica%20Veterinaria%20TERAN%20-%20SEDE%20J.B.L%20Y%20RIVERO!5e0!3m2!1ses!2sus!4v1718631143723!5m2!1ses!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Tercer bloque: Acreditación Certificada -->
+<div class="row mb-4">
+  <div class="col-md-12">
+    <div class="card certification-card text-center">
+      <div class="card-body">
+        <img src="http://hospitalveterinarioteran.com/wp-content/uploads/2017/11/acreditacion1.png" class="img-fluid mb-3" style="max-width: 200px;" alt="Certificado de Acreditación">
+        <h3 class="card-title mb-3">Acreditación Certificada</h3>
+        <p class="card-text">Certificado por el Colegio Médico Veterinario de Arequipa, garantizando los más altos estándares de calidad y cuidado animal.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Sección de descarga de la aplicación -->
+  <div class="download-section text-center mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Imagen -->
+        <div class="col-md-4 order-md-2">
+          <div class="app-install">
+            <img src="https://i.pinimg.com/564x/1a/2d/99/1a2d99c4212b4d2a150f9f88185a684f.jpg" class="img-fluid rounded-circle" alt="Instalar App">
+          </div>
+        </div>
+        <!-- Texto -->
+        <div class="col-md-8 order-md-1">
+          <div class="why-choose-us-text">
+            <h2>Descarga nuestra aplicación</h2>
+            <p>¡Obtén nuestra aplicación y lleva Genialidea contigo en cualquier lugar!</p>
+          </div>
+          <!-- Botón de descarga -->
+          <button id="downloadButton" class="btn btn-primary mt-3">Descargar APK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Diálogo de confirmación de descarga -->
+  <div id="confirmDialog" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Confirmar descarga</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Al descargar nuestra aplicación, aceptas nuestros términos y condiciones.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <!-- Enlace de descarga -->
+          <a id="downloadLink" href="link-to-your-apk-file" class="btn btn-primary">Descargar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Script para controlar la descarga -->
+  <script>
+    // Función para mostrar el diálogo de confirmación al hacer clic en el botón de descarga
+    document.getElementById('downloadButton').addEventListener('click', function() {
+      $('#confirmDialog').modal('show');
+    });
+  </script>
+
+  <!-- Contact Section -->
+<div class="contact-section text-center mt-5">
+  <h2>Boletín Terrancito</h2>
+  <p>Suscríbete y recibe nuestras ofertas y novedades</p>
+  <form action="/contact" method="POST" class="w-50 mx-auto">
+    <div class="form-group">
+      <label for="name" class="sr-only">Nombre y Apellidos</label>
+      <input type="text" id="name" name="name" class="form-control" placeholder="Nombre y Apellidos*" required>
+    </div>
+    <div class="form-group">
+      <label for="email" class="sr-only">Correo Electrónico</label>
+      <input type="email" id="email" name="email" class="form-control" placeholder="tucorreo@email.com*" required>
+    </div>
+    <div class="form-group">
+      <label for="message" class="sr-only">Tu Mensaje</label>
+      <textarea id="message" name="message" class="form-control" placeholder="Tu Mensaje" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-dark">Enviar</button>
+  </form>
+</div>
+
+<style>
+  .contact-section {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+  }
+  .contact-section h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .contact-section p {
+    margin-bottom: 40px;
+    font-size: 1.1em;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-control {
+    height: calc(2.25rem + 10px);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+  }
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 0.25rem;
+  }
+</style>
+
+
+<br/>
+<%- include('partials/footer') %>
