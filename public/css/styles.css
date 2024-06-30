@@ -41,13 +41,20 @@ header {
   background-size: cover;
   height: 400px;
 }
-
 .photo-text {
   position: absolute;
   bottom: 20px;
   left: 20px;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+  padding: 10px;
+  border-radius: 5px;
 }
+
+.card-text {
+  margin-top: 20px;
+}
+
 
 .overlay {
   position: absolute;
